@@ -5,54 +5,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Cars, Solar & Clean Energy | Tesla</title>
+    <title>Tesla - Electric Vehicles & Clean Energy</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <div class="banner-wrap">
-
-        <nav id="nav-styles">
-            <div class="logo">
-                <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
-                        fill="currentColor"></path>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path>
                 </svg>
             </div>
 
-            <div class="middle-menu">
-                <span class="nav-item">Model S</span>
-                <span class="nav-item">Model 3</span>
-                <span class="nav-item">Model X</span>
-                <span class="nav-item">Model Y</span>
-                <span class="nav-item">Solar Roof</span>
-                <span class="nav-item">Solar Panels</span>
+            <!-- Navigation Links -->
+            <div class="navbar-links">
+                <a href="#model3">Model 3</a>
+                <a href="#modely">Model Y</a>
+                <a href="#models">Model S</a>
+                <a href="#modelx">Model X</a>
+                <a href="#energy">Solar</a>
             </div>
 
-            <div class="right-menu">
-                <span class="nav-item">Shop</span>
-                <span class="nav-item">Account</span>
-                <span class="nav-item">Menu</span>
+            <!-- Right Side Menu -->
+            <div class="navbar-right">
+                <a href="#shop">Shop</a>
+                <a href="#account">Account</a>
+                <a href="#menu">Menu</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <main>
-            <div class="title-section">
-                <h1>Model 3</h1>
-                <p>Order Online for <a href="https://www.tesla.com/support/taking-delivery?redirect=no"
-                        target="_blank">Touchless Delivery</a></p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sustainable Energy for Everyone</h1>
+            <p>Order online for touchless delivery</p>
+            <div class="hero-buttons">
+                <button class="btn btn-dark">Order Now</button>
+                <button class="btn btn-light">View Inventory</button>
             </div>
-            <div class="actions-area">
-                <button class="btn-dark">CUSTOM ORDER</button>
-                <button class="btn-light">EXISTING INVENTORY</button>
+        </div>
+    </section>
+
+    <!-- VEHICLES SECTION - ALL MODELS -->
+    <section class="vehicles-section">
+        <!-- Model 3 Card -->
+        <div class="vehicle-card" id="model3">
+            <div class="vehicle-background model3-image"></div>
+            <div class="vehicle-overlay"></div>
+            <div class="vehicle-content">
+                <h2>Model 3</h2>
+                <p class="vehicle-type">Sport Sedan</p>
+                <div class="vehicle-details">
+                    <span>Lease from $299/mo</span>
+                </div>
+                <div class="vehicle-buttons">
+                    <button class="btn btn-link">Order Now</button>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model Y Card -->
+        <div class="vehicle-card" id="modely">
+            <div class="vehicle-background modely-image"></div>
+            <div class="vehicle-overlay"></div>
+            <div class="vehicle-content">
+                <h2>Model Y</h2>
+                <p class="vehicle-type">Midsize SUV</p>
+                <div class="vehicle-details">
+                    <span>Lease from $459/mo</span>
+                </div>
+                <div class="vehicle-buttons">
+                    <button class="btn btn-link">Order Now</button>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model S Card -->
+        <div class="vehicle-card" id="models">
+            <div class="vehicle-background models-image"></div>
+            <div class="vehicle-overlay"></div>
+            <div class="vehicle-content">
+                <h2>Model S</h2>
+                <p class="vehicle-type">Luxury Sedan</p>
+                <div class="vehicle-details">
+                    <span>View Inventory</span>
+                </div>
+                <div class="vehicle-buttons">
+                    <button class="btn btn-link">Order Now</button>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model X Card -->
+        <div class="vehicle-card" id="modelx">
+            <div class="vehicle-background modelx-image"></div>
+            <div class="vehicle-overlay"></div>
+            <div class="vehicle-content">
+                <h2>Model X</h2>
+                <p class="vehicle-type">Luxury SUV</p>
+                <div class="vehicle-details">
+                    <span>Premium Performance</span>
+                </div>
+                <div class="vehicle-buttons">
+                    <button class="btn btn-link">Order Now</button>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODEL X DETAILED SECTION -->
+    <section class="modelx-detail">
+        <div class="modelx-container">
+            <h2>Model X - Luxury Electric SUV</h2>
+            <p class="section-subtitle">Experience the future of driving</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>0-60 MPH in 2.5s</h3>
+                    <p>Incredible acceleration and smooth driving experience for every journey</p>
+                </div>
+                <div class="feature-card">
+                    <h3>348 Mile Range</h3>
+                    <p>Travel further on a single charge with advanced battery technology</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Auto Pilot</h3>
+                    <p>Advanced autonomous driving capabilities for safer journeys</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Falcon Wing Doors</h3>
+                    <p>Unique, stunning design that turns heads wherever you go</p>
+                </div>
             </div>
 
-        </main>
+            <button class="btn btn-dark cta-button">Configure Your Model X</button>
+        </div>
+    </section>
 
-    </div>
+    <!-- ENERGY PRODUCTS SECTION -->
+    <section class="energy-section" id="energy">
+        <div class="energy-container">
+            <h2>Clean Energy Solutions</h2>
+            <p class="section-subtitle">Power your home and save money</p>
+
+            <div class="energy-cards">
+                <div class="energy-card">
+                    <h3>Solar Panels</h3>
+                    <p>Generate your own clean energy and reduce electricity bills</p>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+
+                <div class="energy-card">
+                    <h3>Solar Roof</h3>
+                    <p>Beautiful roof tiles that generate electricity for your home</p>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+
+                <div class="energy-card">
+                    <h3>Powerwall</h3>
+                    <p>Store energy during the day and use it when you need it</p>
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Tesla</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tesla Clone - Educational Project</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
