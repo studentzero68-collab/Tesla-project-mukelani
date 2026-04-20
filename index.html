@@ -38,8 +38,30 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION - CAROUSEL -->
     <section class="hero">
+        <div class="hero-carousel-wrapper">
+            <div class="hero-carousel" id="heroCarousel">
+                <div class="hero-slide">
+                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-3-Desktop-US.jpg" alt="Tesla Model 3">
+                    <div class="hero-slide-overlay"></div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-Y-Desktop-US.jpg" alt="Tesla Model Y">
+                    <div class="hero-slide-overlay"></div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-Main-Hero-Desktop-NA.jpg" alt="Tesla Model S">
+                    <div class="hero-slide-overlay"></div>
+                </div>
+                <div class="hero-slide">
+                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-X-Main-Hero-Desktop-NA.jpg" alt="Tesla Model X">
+                    <div class="hero-slide-overlay"></div>
+                </div>
+            </div>
+            <button class="hero-carousel-btn prev-hero-btn">&#10094;</button>
+            <button class="hero-carousel-btn next-hero-btn">&#10095;</button>
+        </div>
         <div class="hero-content">
             <h1>Sustainable Energy for Everyone</h1>
             <p>Order online for touchless delivery</p>
@@ -227,7 +249,41 @@
     </footer>
 
     <script>
-        // Carousel functionality
+        // Hero Carousel functionality
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const prevHeroBtn = document.querySelector('.prev-hero-btn');
+        const nextHeroBtn = document.querySelector('.next-hero-btn');
+        let heroCurrentIndex = 0;
+
+        function updateHeroCarousel() {
+            heroSlides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === heroCurrentIndex) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        prevHeroBtn.addEventListener('click', () => {
+            heroCurrentIndex = (heroCurrentIndex - 1 + heroSlides.length) % heroSlides.length;
+            updateHeroCarousel();
+        });
+
+        nextHeroBtn.addEventListener('click', () => {
+            heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
+            updateHeroCarousel();
+        });
+
+        // Auto-scroll hero carousel every 6 seconds
+        setInterval(() => {
+            heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
+            updateHeroCarousel();
+        }, 6000);
+
+        // Initialize first slide
+        updateHeroCarousel();
+
+        // Vehicle Carousel functionality
         const carouselWrapper = document.querySelector('.carousel-wrapper');
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
