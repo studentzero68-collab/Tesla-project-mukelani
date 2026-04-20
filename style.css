@@ -1,4 +1,4 @@
-/* RESET AND BASIC STYLES */
+﻿/* RESET AND BASIC STYLES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
@@ -7,21 +7,33 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #f4f5f7;
+    color: #1f1f1f;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
 }
 
 /* NAVIGATION BAR */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.96);
-    border-bottom: 1px solid #e6e6e6;
+    background-color: rgba(12, 12, 12, 0.82);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 100;
-    padding: 0 20px;
-    backdrop-filter: blur(10px);
+    padding: 0 24px;
+    backdrop-filter: blur(18px);
 }
 
 .navbar-container {
@@ -30,48 +42,48 @@ body {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    height: 64px;
+    height: 72px;
 }
 
 .navbar-logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #111;
+    color: #fff;
 }
 
 .navbar-logo svg {
-    height: 20px;
-    width: 100px;
+    height: 24px;
+    width: 110px;
 }
 
 .navbar-links {
     display: flex;
-    gap: 24px;
+    gap: 28px;
     flex: 1;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .navbar-links a,
 .navbar-right a {
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease;
 }
 
 .navbar-links a:hover,
 .navbar-right a:hover {
-    color: #ddd;
+    color: #c1c1c1;
 }
 
 .navbar-right {
     display: flex;
-    gap: 24px;
+    gap: 22px;
 }
 
 .navbar-right a {
@@ -80,70 +92,91 @@ body {
 
 /* HERO SECTION */
 .hero {
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-    height: 100vh;
+    background: linear-gradient(135deg, #080808 0%, #151515 100%);
+    min-height: calc(100vh - 72px);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    padding: 100px 24px 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 35%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 760px;
+    z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 56px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 700;
+    line-height: 1.02;
+    margin-bottom: 24px;
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 1.15rem;
     margin-bottom: 40px;
     font-weight: 300;
+    color: #d8d8d8;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 18px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* BUTTON STYLES */
 .btn {
-    padding: 12px 30px;
+    padding: 14px 32px;
     border: none;
-    border-radius: 4px;
+    border-radius: 999px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.25s ease;
 }
 
 .btn-dark {
-    background-color: #191d21;
-    color: white;
+    background-color: #fff;
+    color: #111;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
 }
 
 .btn-dark:hover {
-    background-color: #333;
+    transform: translateY(-1px);
+    background-color: #f3f3f3;
 }
 
 .btn-light {
-    background-color: #e4e4e2;
-    color: #191d21;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .btn-light:hover {
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.18);
 }
 
 .btn-link {
     background-color: #007bff;
     color: white;
     border: 2px solid #007bff;
-    padding: 8px 20px;
-    font-size: 12px;
-    font-weight: 600;
+    padding: 10px 26px;
+    font-size: 13px;
 }
 
 .btn-link:hover {
@@ -152,23 +185,22 @@ body {
 }
 
 .btn-grey {
-    background-color: #495057;
+    background-color: #343a40;
     color: white;
-    border: 2px solid #495057;
-    padding: 8px 20px;
-    font-size: 12px;
-    font-weight: 600;
+    border: 2px solid #343a40;
+    padding: 10px 26px;
+    font-size: 13px;
 }
 
 .btn-grey:hover {
-    background-color: #343a40;
-    border-color: #343a40;
+    background-color: #1f2428;
+    border-color: #1f2428;
 }
 
 /* VEHICLES SECTION - CAROUSEL */
 .vehicles-section {
-    background-color: #f5f5f5;
-    padding: 40px 0;
+    background-color: #f2f4f8;
+    padding: 60px 0 80px;
 }
 
 .carousel-container {
@@ -180,11 +212,11 @@ body {
 
 .carousel-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 0 40px;
+    padding: 0 24px 24px;
 }
 
 .carousel-wrapper::-webkit-scrollbar {
@@ -193,19 +225,23 @@ body {
 
 .vehicle-card {
     flex: 0 0 500px;
-    height: 500px;
+    min-width: 500px;
+    height: 520px;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    cursor: pointer;
-    transition: transform 0.3s;
+    cursor: grab;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     scroll-snap-align: start;
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.18);
+    background-color: #111;
 }
 
 .vehicle-card:hover {
-    transform: scale(1.02);
+    transform: translateY(-6px);
 }
 
 .vehicle-img {
@@ -224,7 +260,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.35) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.6) 85%);
     z-index: 2;
 }
 
@@ -233,32 +269,34 @@ body {
     z-index: 3;
     padding: 40px;
     text-align: center;
-    color: #333;
+    color: #fff;
+    margin-top: auto;
 }
 
 .vehicle-content h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .vehicle-type {
     font-size: 14px;
     font-weight: 300;
-    margin-bottom: 20px;
-    color: #666;
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .vehicle-details {
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .vehicle-buttons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* CAROUSEL BUTTONS */
@@ -266,7 +304,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
     color: white;
     border: none;
     width: 50px;
@@ -275,7 +313,7 @@ body {
     font-size: 24px;
     cursor: pointer;
     z-index: 10;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .carousel-btn:hover {
@@ -283,13 +321,14 @@ body {
 }
 
 .prev-btn {
-    left: 10px;
+    left: 14px;
 }
 
 .next-btn {
-    right: 10px;
+    right: 14px;
 }
 
+.modelx-detail {
     background-color: white;
     padding: 80px 40px;
     text-align: center;
@@ -302,13 +341,13 @@ body {
 
 .modelx-detail h2 {
     font-size: 44px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
 .section-subtitle {
     font-size: 18px;
-    color: #666;
+    color: #5a5a5a;
     margin-bottom: 60px;
     font-weight: 300;
 }
@@ -316,13 +355,22 @@ body {
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 32px;
     margin-bottom: 60px;
 }
 
 .feature-card {
+    background: #fafbfc;
+    border: 1px solid #eceef1;
+    border-radius: 18px;
     text-align: center;
-    padding: 30px;
+    padding: 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(18, 24, 32, 0.08);
 }
 
 .feature-card h3 {
@@ -332,19 +380,19 @@ body {
 }
 
 .feature-card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
+    font-size: 15px;
+    color: #606770;
+    line-height: 1.8;
 }
 
 .cta-button {
-    padding: 15px 40px;
+    padding: 16px 44px;
     font-size: 16px;
 }
 
 /* ENERGY SECTION */
 .energy-section {
-    background-color: #f5f5f5;
+    background-color: #f5f7fb;
     padding: 80px 40px;
 }
 
@@ -356,42 +404,49 @@ body {
 
 .energy-section h2 {
     font-size: 44px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
 .energy-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 28px;
     margin-top: 60px;
 }
 
 .energy-card {
     background-color: white;
     padding: 40px;
-    border-radius: 8px;
+    border-radius: 20px;
     text-align: center;
+    border: 1px solid #e6e8ec;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.energy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.08);
 }
 
 .energy-card h3 {
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 18px;
 }
 
 .energy-card p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    font-size: 15px;
+    color: #5c5c5c;
+    margin-bottom: 24px;
+    line-height: 1.75;
 }
 
 /* FOOTER */
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 60px 40px 30px;
+    background-color: #111317;
+    color: #d7d9dd;
+    padding: 60px 40px 32px;
 }
 
 .footer-container {
@@ -402,14 +457,15 @@ body {
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    margin-bottom: 40px;
+    gap: 40px;
+    margin-bottom: 32px;
 }
 
 .footer-column h4 {
     font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #f5f6f7;
 }
 
 .footer-column ul {
@@ -421,52 +477,96 @@ body {
 }
 
 .footer-column ul li a {
-    color: #999;
+    color: #b0b3b8;
     text-decoration: none;
-    font-size: 12px;
-    transition: color 0.3s;
+    font-size: 13px;
+    transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-bottom {
-    border-top: 1px solid #444;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding-top: 20px;
     text-align: center;
-    color: #888;
-    font-size: 12px;
+    color: #8a8f98;
+    font-size: 13px;
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .vehicles-section {
-        grid-template-columns: 1fr;
+@media (max-width: 1024px) {
+    .carousel-wrapper {
+        padding: 0 16px 24px;
     }
 
-    .features-grid {
-        grid-template-columns: 1fr;
+    .vehicle-card {
+        flex: 0 0 420px;
+        min-width: 420px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: calc(100vh - 72px);
+        padding: 80px 18px 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .vehicles-section {
+        padding: 40px 0 60px;
     }
 
     .energy-cards {
         grid-template-columns: 1fr;
     }
 
-    .footer-links {
+    .features-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar {
+        padding: 0 16px;
     }
 
-    .navbar-links {
+    .navbar-right {
         display: none;
     }
 
-    .hero-content h1 {
-        font-size: 36px;
+    .carousel-wrapper {
+        gap: 16px;
     }
 
-    .modelx-detail h2 {
-        font-size: 28px;
+    .vehicle-card {
+        flex: 0 0 320px;
+        min-width: 320px;
+        height: 460px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .carousel-btn {
+        display: none;
     }
 }
