@@ -152,17 +152,17 @@ body {
 }
 
 .btn-grey {
-    background-color: #6c757d;
+    background-color: #495057;
     color: white;
-    border: 2px solid #6c757d;
+    border: 2px solid #495057;
     padding: 8px 20px;
     font-size: 12px;
     font-weight: 600;
 }
 
 .btn-grey:hover {
-    background-color: #5a6268;
-    border-color: #5a6268;
+    background-color: #343a40;
+    border-color: #343a40;
 }
 
 /* VEHICLES SECTION - CAROUSEL */
