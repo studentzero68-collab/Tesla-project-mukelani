@@ -14,22 +14,28 @@
     <nav class="navbar">
         <div class="navbar-container">
             <!-- Logo -->
-            <div class="navbar-logo">
-                <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path>
-                </svg>
-            </div>
+            <a class="navbar-logo-link" href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">
+                <div class="navbar-logo">
+                    <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </a>
 
             <!-- Navigation Links - Clean Tesla Style -->
             <div class="navbar-links">
-                <a href="#">Vehicles</a>
-                <a href="#">Energy</a>
-                <a href="#">Charging</a>
+                <a href="#model3">Model 3</a>
+                <a href="#modely">Model Y</a>
+                <a href="#models">Model S</a>
+                <a href="#modelx">Model X</a>
+                <a href="#energy">Solar Roof</a>
+                <a href="#energy">Solar Panels</a>
+                <a href="#energy">Powerwall</a>
             </div>
 
             <!-- Right Side Menu -->
             <div class="navbar-right">
-                <a href="#">Shop</a>
+                <a href="#">Help</a>
                 <a href="#">Account</a>
             </div>
         </div>
@@ -51,7 +57,7 @@
     <section class="vehicles-section">
         <!-- Model 3 Card with Tesla Image -->
         <div class="vehicle-card" id="model3">
-            <div class="vehicle-background" style="background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg');"></div>
+            <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg" alt="Tesla Model 3">
             <div class="vehicle-overlay"></div>
             <div class="vehicle-content">
                 <h2>Model 3</h2>
@@ -68,7 +74,7 @@
 
         <!-- Model Y Card with Tesla Image -->
         <div class="vehicle-card" id="modely">
-            <div class="vehicle-background" style="background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg');"></div>
+            <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg" alt="Tesla Model Y">
             <div class="vehicle-overlay"></div>
             <div class="vehicle-content">
                 <h2>Model Y</h2>
@@ -85,7 +91,7 @@
 
         <!-- Model S Card with Tesla Image -->
         <div class="vehicle-card" id="models">
-            <div class="vehicle-background" style="background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-S-Desktop-US.jpg');"></div>
+            <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-S-Desktop-US.jpg" alt="Tesla Model S">
             <div class="vehicle-overlay"></div>
             <div class="vehicle-content">
                 <h2>Model S</h2>
@@ -102,7 +108,7 @@
 
         <!-- Model X Card with Tesla Image -->
         <div class="vehicle-card" id="modelx">
-            <div class="vehicle-background" style="background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-X-Desktop-US.jpg');"></div>
+            <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-X-Desktop-US.jpg" alt="Tesla Model X">
             <div class="vehicle-overlay"></div>
             <div class="vehicle-content">
                 <h2>Model X</h2>

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "Zaio tesla",
+			"path": ".."
+		},
+		{
+			"name": "Zaio Netflix",
+			"path": "../../Zaio Netflix"
+		},
+		{
+			"name": "FSWD_UI_Screenshot",
+			"path": "../../FSWD_UI_Screenshot"
+		},
+		{
+			"path": "../../Ziao tesla 2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Zaio tesla"
+	}
+}

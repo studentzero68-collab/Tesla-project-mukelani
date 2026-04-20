@@ -17,10 +17,11 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #e6e6e6;
     z-index: 100;
     padding: 0 20px;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-container {
@@ -29,51 +30,52 @@ body {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    height: 60px;
+    height: 64px;
+}
+
+.navbar-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
 }
 
 .navbar-logo svg {
     height: 20px;
     width: 100px;
-    cursor: pointer;
 }
 
 .navbar-links {
     display: flex;
-    gap: 30px;
+    gap: 24px;
     flex: 1;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.navbar-links a {
+.navbar-links a,
+.navbar-right a {
     text-decoration: none;
-    color: #333;
-    font-size: 14px;
+    color: #111;
+    font-size: 13px;
     font-weight: 500;
-    cursor: pointer;
-    transition: color 0.3s;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.navbar-links a:hover {
-    color: #666;
+.navbar-links a:hover,
+.navbar-right a:hover {
+    color: #555;
 }
 
 .navbar-right {
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 
 .navbar-right a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.navbar-right a:hover {
-    color: #666;
+    white-space: nowrap;
 }
 
 /* HERO SECTION */
@@ -172,15 +174,13 @@ body {
     transform: scale(1.02);
 }
 
-.vehicle-background {
+.vehicle-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
     z-index: 1;
 }
 
@@ -190,7 +190,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.35) 100%);
     z-index: 2;
 }
 
@@ -227,17 +227,6 @@ body {
     justify-content: center;
 }
 
-/* Vehicle Background Images - Now using inline styles in HTML */
-.vehicle-background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-/* MODEL X DETAIL SECTION */
-.modelx-detail {
     background-color: white;
     padding: 80px 40px;
     text-align: center;

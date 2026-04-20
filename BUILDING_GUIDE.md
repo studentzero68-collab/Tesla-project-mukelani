@@ -1,7 +1,5 @@
 # How to Build a Tesla Clone Website - Step by Step Guide
 
-This guide explains how this Tesla project was built from scratch. Perfect for beginners!
-
 ---
 
 ## Step 1: Set Up Your Project Structure
@@ -16,8 +14,6 @@ Tesla-project/
 ├── index.html
 └── style.css
 ```
-
-**Why?** HTML is the structure of your website (like the skeleton), and CSS is the styling (like the skin and clothes).
 
 ---
 
