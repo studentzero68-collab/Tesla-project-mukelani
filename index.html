@@ -5,316 +5,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla - Electric Vehicles & Clean Energy</title>
+    <title>Mukelani Motors - Electric Vehicles & Clean Energy</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- Logo -->
-            <a class="navbar-logo-link" href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">
-                <div class="navbar-logo">
-                    <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path>
-                    </svg>
-                    <span class="navbar-logo-text">Mukelani porject tesla</span>
-                </div>
-            </a>
 
-            <!-- Navigation Links -->
-            <div class="navbar-links">
-                <a href="#">Vehicles</a>
-                <a href="#energy">Energy</a>
-                <a href="#">Charging</a>
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-container">
 
-            <!-- Right Side Menu -->
-            <div class="navbar-right">
-                <a href="#">Help</a>
-                <a href="#">Account</a>
+        <!-- FIXED LOGO -->
+        <a class="navbar-logo-link" href="#">
+            <div class="navbar-logo">
+                <svg width="160" height="40" viewBox="0 0 160 40">
+                    <g transform="translate(0,5)">
+                        <polygon points="10,25 20,5 30,25" fill="currentColor"/>
+                        <rect x="14" y="18" width="12" height="4" fill="#fff"/>
+                    </g>
+
+                    <text x="45" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="currentColor">
+                        MUKELANI
+                    </text>
+
+                    <text x="45" y="35" font-family="Arial" font-size="8" fill="currentColor" letter-spacing="2">
+                        MOTORS
+                    </text>
+                </svg>
             </div>
+        </a>
+
+        <div class="navbar-links">
+            <a href="#">Vehicles</a>
+            <a href="#energy">Energy</a>
+            <a href="#">Charging</a>
         </div>
-    </nav>
 
-    <!-- HERO SECTION - CAROUSEL -->
-    <section class="hero">
-        <div class="hero-carousel-wrapper">
-            <div class="hero-carousel" id="heroCarousel">
-                <div class="hero-slide">
-                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-3-Desktop-US.jpg" alt="Tesla Model 3">
-                    <div class="hero-slide-overlay"></div>
-                </div>
-                <div class="hero-slide">
-                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-Y-Desktop-US.jpg" alt="Tesla Model Y">
-                    <div class="hero-slide-overlay"></div>
-                </div>
-                <div class="hero-slide">
-                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-Main-Hero-Desktop-NA.jpg" alt="Tesla Model S">
-                    <div class="hero-slide-overlay"></div>
-                </div>
-                <div class="hero-slide">
-                    <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-X-Main-Hero-Desktop-NA.jpg" alt="Tesla Model X">
-                    <div class="hero-slide-overlay"></div>
-                </div>
-            </div>
-            <button class="hero-carousel-btn prev-hero-btn">&#10094;</button>
-            <button class="hero-carousel-btn next-hero-btn">&#10095;</button>
+        <div class="navbar-right">
+            <a href="#">Help</a>
+            <a href="#">Account</a>
         </div>
-        <div class="hero-content">
-            <h1>Sustainable Energy for Everyone</h1>
-            <p>Order online for touchless delivery</p>
-            <div class="hero-buttons">
-                <button class="btn btn-dark">Order Now</button>
-                <button class="btn btn-light">View Inventory</button>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-carousel-wrapper">
+        <div class="hero-carousel" id="heroCarousel">
+
+            <div class="hero-slide active">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-3-Desktop-US.jpg">
+                <div class="hero-slide-overlay"></div>
             </div>
+
+            <div class="hero-slide">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Model-Y-Desktop-US.jpg">
+                <div class="hero-slide-overlay"></div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-Main-Hero-Desktop-NA.jpg">
+                <div class="hero-slide-overlay"></div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-X-Main-Hero-Desktop-NA.jpg">
+                <div class="hero-slide-overlay"></div>
+            </div>
+
         </div>
-    </section>
 
-    <!-- VEHICLES SECTION - CAROUSEL -->
-    <section class="vehicles-section">
-        <div class="carousel-container">
-            <div class="carousel-wrapper">
-                <!-- Model 3 Card -->
-                <div class="vehicle-card" id="model3">
-                    <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg" alt="Tesla Model 3">
-                    <div class="vehicle-overlay"></div>
-                    <div class="vehicle-content">
-                        <h2>Model 3</h2>
-                        <p class="vehicle-type">Sport Sedan</p>
-                        <div class="vehicle-details">
-                            <span>Lease from $299/mo</span>
-                        </div>
-                        <div class="vehicle-buttons">
-                            <button class="btn btn-link">Order Now</button>
-                            <button class="btn btn-grey">Learn More</button>
-                        </div>
+        <button class="hero-carousel-btn prev-hero-btn">&#10094;</button>
+        <button class="hero-carousel-btn next-hero-btn">&#10095;</button>
+    </div>
+
+    <div class="hero-content">
+        <h1>Sustainable Energy for Everyone</h1>
+        <p>Order online for touchless delivery</p>
+
+        <div class="hero-buttons">
+            <button class="btn btn-dark">Order Now</button>
+            <button class="btn btn-light">View Inventory</button>
+        </div>
+    </div>
+</section>
+
+<!-- VEHICLES -->
+<section class="vehicles-section">
+    <div class="carousel-container">
+
+        <div class="carousel-wrapper" id="vehicleCarousel">
+
+            <!-- MODEL 3 -->
+            <div class="vehicle-card">
+                <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg">
+                <div class="vehicle-overlay"></div>
+
+                <div class="vehicle-content">
+                    <h2>Model 3</h2>
+                    <p class="vehicle-type">Sport Sedan</p>
+
+                    <div class="vehicle-details">
+                        <span>Lease from $299/mo</span>
                     </div>
-                </div>
 
-                <!-- Model Y Card -->
-                <div class="vehicle-card" id="modely">
-                    <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg" alt="Tesla Model Y">
-                    <div class="vehicle-overlay"></div>
-                    <div class="vehicle-content">
-                        <h2>Model Y</h2>
-                        <p class="vehicle-type">Midsize SUV</p>
-                        <div class="vehicle-details">
-                            <span>Lease from $459/mo</span>
-                        </div>
-                        <div class="vehicle-buttons">
-                            <button class="btn btn-link">Order Now</button>
-                            <button class="btn btn-grey">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Model S Card -->
-                <div class="vehicle-card" id="models">
-                    <img class="vehicle-img" src="https://media.ed.edmunds-media.com/tesla/model-s/2026/oem/2026_tesla_model-s_sedan_plaid_fq_oem_1_600.jpg" alt="Tesla Model S">
-                    <div class="vehicle-overlay"></div>
-                    <div class="vehicle-content">
-                        <h2>Model S</h2>
-                        <p class="vehicle-type">Luxury Sedan</p>
-                        <div class="vehicle-details">
-                            <span>View Inventory</span>
-                        </div>
-                        <div class="vehicle-buttons">
-                            <button class="btn btn-link">Order Now</button>
-                            <button class="btn btn-grey">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Model X Card -->
-                <div class="vehicle-card" id="modelx">
-                    <img class="vehicle-img" src="https://www.teslarati.com/wp-content/uploads/2025/06/tesla-model-x-new-frost-blue-scaled.jpg" alt="Tesla Model X">
-                    <div class="vehicle-overlay"></div>
-                    <div class="vehicle-content">
-                        <h2>Model X</h2>
-                        <p class="vehicle-type">Luxury SUV</p>
-                        <div class="vehicle-details">
-                            <span>Premium Performance</span>
-                        </div>
-                        <div class="vehicle-buttons">
-                            <button class="btn btn-link">Order Now</button>
-                            <button class="btn btn-grey">Learn More</button>
-                        </div>
+                    <div class="vehicle-buttons">
+                        <button class="btn btn-link">Order Now</button>
+                        <button class="btn btn-grey">Learn More</button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-btn prev-btn">&lt;</button>
-            <button class="carousel-btn next-btn">&gt;</button>
-        </div>
-    </section>
 
+            <!-- MODEL Y -->
+            <div class="vehicle-card">
+                <img class="vehicle-img" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg">
+                <div class="vehicle-overlay"></div>
 
-    <!-- MODEL X DETAILED SECTION -->
-    <section class="modelx-detail">
-        <div class="modelx-container">
-            <h2>Model X - Luxury Electric SUV</h2>
-            <p class="section-subtitle">Experience the future of driving</p>
+                <div class="vehicle-content">
+                    <h2>Model Y</h2>
+                    <p class="vehicle-type">Midsize SUV</p>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>0-60 MPH in 2.5s</h3>
-                    <p>Incredible acceleration and smooth driving experience for every journey</p>
-                </div>
-                <div class="feature-card">
-                    <h3>348 Mile Range</h3>
-                    <p>Travel further on a single charge with advanced battery technology</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Auto Pilot</h3>
-                    <p>Advanced autonomous driving capabilities for safer journeys</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Falcon Wing Doors</h3>
-                    <p>Unique, stunning design that turns heads wherever you go</p>
+                    <div class="vehicle-details">
+                        <span>Lease from $459/mo</span>
+                    </div>
+
+                    <div class="vehicle-buttons">
+                        <button class="btn btn-link">Order Now</button>
+                        <button class="btn btn-grey">Learn More</button>
+                    </div>
                 </div>
             </div>
 
-            <button class="btn btn-dark cta-button">Configure Your Model X</button>
-        </div>
-    </section>
+            <!-- MODEL S -->
+            <div class="vehicle-card">
+                <img class="vehicle-img" src="https://media.ed.edmunds-media.com/tesla/model-s/2026/oem/2026_tesla_model-s_sedan_plaid_fq_oem_1_600.jpg">
+                <div class="vehicle-overlay"></div>
 
-    <!-- ENERGY PRODUCTS SECTION -->
-    <section class="energy-section" id="energy">
-        <div class="energy-container">
-            <h2>Clean Energy Solutions</h2>
-            <p class="section-subtitle">Power your home and save money</p>
+                <div class="vehicle-content">
+                    <h2>Model S</h2>
+                    <p class="vehicle-type">Luxury Sedan</p>
 
-            <div class="energy-cards">
-                <div class="energy-card">
-                    <img class="energy-card-img" src="https://futurism.com/wp-content/uploads/2022/01/startup-solar-upgrade-tesla-60-miles.jpg" alt="Solar Panels">
-                    <h3>Solar Panels</h3>
-                    <p>Generate your own clean energy and reduce electricity bills</p>
-                    <button class="btn btn-link">Learn More</button>
-                </div>
+                    <div class="vehicle-details">
+                        <span>View Inventory</span>
+                    </div>
 
-                <div class="energy-card">
-                    <img class="energy-card-img" src="https://static.vecteezy.com/system/resources/thumbnails/039/371/307/small/ai-generated-solar-panels-on-a-modern-tiny-house-roof-top-for-a-sustainable-future-photo.jpg" alt="Solar Roof">
-                    <h3>Solar Roof</h3>
-                    <p>Beautiful roof tiles that generate electricity for your home</p>
-                    <button class="btn btn-link">Learn More</button>
-                </div>
-
-                <div class="energy-card">
-                    <img class="energy-card-img" src="https://pure-electric.com.au/sites/default/files/2025-05/Tesla%20Powerwall%203%20Expansion%20Pack%20Australia_0.jpg" alt="Powerwall">
-                    <h3>Powerwall</h3>
-                    <p>Store energy during the day and use it when you need it</p>
-                    <button class="btn btn-link">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Tesla</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Settings</a></li>
-                    </ul>
+                    <div class="vehicle-buttons">
+                        <button class="btn btn-link">Order Now</button>
+                        <button class="btn btn-grey">Learn More</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 Tesla Clone - Educational Project</p>
+            <!-- MODEL X -->
+            <div class="vehicle-card">
+                <img class="vehicle-img" src="https://www.teslarati.com/wp-content/uploads/2025/06/tesla-model-x-new-frost-blue-scaled.jpg">
+                <div class="vehicle-overlay"></div>
+
+                <div class="vehicle-content">
+                    <h2>Model X</h2>
+                    <p class="vehicle-type">Luxury SUV</p>
+
+                    <div class="vehicle-details">
+                        <span>Premium Performance</span>
+                    </div>
+
+                    <div class="vehicle-buttons">
+                        <button class="btn btn-link">Order Now</button>
+                        <button class="btn btn-grey">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-btn prev-btn">&lt;</button>
+        <button class="carousel-btn next-btn">&gt;</button>
+    </div>
+</section>
+
+<!-- MODEL X DETAIL -->
+<section class="modelx-detail">
+    <div class="modelx-container">
+        <h2>Model X - Luxury Electric SUV</h2>
+        <p class="section-subtitle">Experience the future of driving</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>0-60 MPH in 2.5s</h3>
+                <p>Incredible acceleration</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>348 Mile Range</h3>
+                <p>Long-distance travel</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Auto Pilot</h3>
+                <p>Advanced driving system</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Falcon Doors</h3>
+                <p>Unique design</p>
             </div>
         </div>
-    </footer>
 
-    <script>
-        // Hero Carousel functionality
-        const heroSlides = document.querySelectorAll('.hero-slide');
-        const prevHeroBtn = document.querySelector('.prev-hero-btn');
-        const nextHeroBtn = document.querySelector('.next-hero-btn');
-        let heroCurrentIndex = 0;
+        <button class="btn btn-dark cta-button">Configure Your Model X</button>
+    </div>
+</section>
 
-        function updateHeroCarousel() {
-            heroSlides.forEach((slide, index) => {
-                slide.classList.remove('active');
-                if (index === heroCurrentIndex) {
-                    slide.classList.add('active');
-                }
-            });
-        }
+<!-- ENERGY -->
+<section class="energy-section" id="energy">
+    <div class="energy-container">
 
-        prevHeroBtn.addEventListener('click', () => {
-            heroCurrentIndex = (heroCurrentIndex - 1 + heroSlides.length) % heroSlides.length;
-            updateHeroCarousel();
+        <h2>Clean Energy Solutions</h2>
+        <p class="section-subtitle">Power your home and save money</p>
+
+        <div class="energy-cards">
+
+            <div class="energy-card">
+                <img class="energy-card-img" src="https://futurism.com/wp-content/uploads/2022/01/startup-solar-upgrade-tesla-60-miles.jpg">
+                <h3>Solar Panels</h3>
+                <p>Generate clean energy</p>
+            </div>
+
+            <div class="energy-card">
+                <img class="energy-card-img" src="https://static.vecteezy.com/system/resources/thumbnails/039/371/307/small/ai-generated-solar-panels-on-a-modern-tiny-house-roof-top-for-a-sustainable-future-photo.jpg">
+                <h3>Solar Roof</h3>
+                <p>Smart roofing energy</p>
+            </div>
+
+            <div class="energy-card">
+                <img class="energy-card-img" src="https://pure-electric.com.au/sites/default/files/2025-05/Tesla%20Powerwall%203%20Expansion%20Pack%20Australia_0.jpg">
+                <h3>Powerwall</h3>
+                <p>Energy storage system</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mukelani Motors - Educational Project</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    let heroCurrentIndex = 0;
+
+    function updateHeroCarousel() {
+        heroSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === heroCurrentIndex) slide.classList.add('active');
         });
+    }
 
-        nextHeroBtn.addEventListener('click', () => {
-            heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
-            updateHeroCarousel();
-        });
-
-        // Auto-scroll hero carousel every 6 seconds
-        setInterval(() => {
-            heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
-            updateHeroCarousel();
-        }, 6000);
-
-        // Initialize first slide
+    document.querySelector('.next-hero-btn').onclick = () => {
+        heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
         updateHeroCarousel();
+    };
 
-        // Vehicle Carousel functionality
-        const carouselWrapper = document.querySelector('.carousel-wrapper');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        const cards = document.querySelectorAll('.vehicle-card');
+    document.querySelector('.prev-hero-btn').onclick = () => {
+        heroCurrentIndex = (heroCurrentIndex - 1 + heroSlides.length) % heroSlides.length;
+        updateHeroCarousel();
+    };
 
-        let currentIndex = 0;
-        const cardWidth = 520; // 500px + 20px gap
-
-        function updateCarousel() {
-            carouselWrapper.scrollLeft = currentIndex * cardWidth;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = Math.max(0, currentIndex - 1);
-            updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = Math.min(cards.length - 1, currentIndex + 1);
-            updateCarousel();
-        });
-
-        // Optional: Auto-scroll every 5 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateCarousel();
-        }, 5000);
-    </script>
+    setInterval(() => {
+        heroCurrentIndex = (heroCurrentIndex + 1) % heroSlides.length;
+        updateHeroCarousel();
+    }, 6000);
+</script>
 
 </body>
-
 </html>
-
-
